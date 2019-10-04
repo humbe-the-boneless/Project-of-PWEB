@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Cadastro - Hulkweb Academia</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="w3-top">
+			<div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+				<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" title="Menu de Navegação"><i class="fa fa-bars"></i></a>
+			    <a href="TelaCadastro.html" class="w3-bar-item w3-button w3-padding-large w3-white">TOPO</a>
+			    <a href="TelaLogin.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LOGIN</a>
+			    <a href="TelaInicial.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SAIR</a>
+			</div>
+		</div>
+		<header class="w3-container w3-blue w3-center">
+			<h1 class="w3-margin w3-jumbo">Hulkweb Academia</h1>
+			<p class="w3-xlarge">Se você for novo por aqui, cadastre-se no sistema abaixo para criar sua conta.</p>
+		</header>
+		<div class="w3-container w3-padding-64">
+			<div class="w3-content">
+				<form>
+					<p>
+						<label class="w3-text-blue"><strong>Nome do usuário</strong><br></label>
+						<input class="w3-input w3-white w3-border w3-padding-large" type="text" name="nome-cadastro" required="required" id="nome-cadastro" placeholder="e.g. Felipe Alencar"></input>
+					</p>
+					<p>
+						<label class="w3-text-blue"><strong>Data de nascimento</strong><br></label>
+						<input class="w3-input w3-white w3-border w3-padding-large" type="date" name="nascimento-cadastro" required="required" id="nascimento-cadastro"></input>	
+					</p>
+					<p>
+						<label class="w3-text-blue"><strong>Peso atual</strong><br></label>
+						<input class="w3-input w3-white w3-border w3-padding-large" type="text" name="peso-cadastro" required="required" id="peso-cadastro" placeholder="e.g. 62kg"></input>						
+					</p>
+					<p>
+						<label class="w3-text-blue"><strong>E-mail</strong><br></label>
+						<input class="w3-input w3-white w3-border w3-padding-large" type="email" name="email-cadastro" required="required" id="email-cadastro" placeholder="e.g. felipealencarlopes@gmail.com"></input>						
+					</p>
+					<p>
+						<label class="w3-text-blue"><strong>Senha</strong><br></label>
+						<input class="w3-input w3-white w3-border w3-padding-large" type="password" name="senha-cadastro" required="required" id="senha-cadastro" placeholder="e.g. souforte123"></input>						
+					</p>
+					<p>
+						<label class="w3-text-blue"><strong>Confirmação de senha</strong><br></label>
+						<input class="w3-input w3-white w3-border w3-padding-large" type="password" name="confirmacao-cadastro" required="required" id="confirmacao-senha" placeholder="e.g. souforte123"></input>						
+					</p>
+					<input class="w3-button w3-blue w3-padding-large w3-margin-top w3-round-xxlarge" type="submit" onclick="salvarCadastro();" value="Continuar">
+				</form>
+			</div>
+		</div>
+		<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+			<p>© Hulkweb Academia 2019<br>Humberto Barbosa & Regilmar Lima</p>
+		</footer>
+	</body>
+		<script src="script.js"></script>
+</html>
